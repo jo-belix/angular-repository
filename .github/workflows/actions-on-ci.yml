@@ -1,5 +1,6 @@
 name: GitHub actions on schedule (monday noon)
 on:
+  workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron:  '0 12 * * 1'
@@ -8,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-          with:
-            # Disabling shallow clone is recommended for improving relevancy of reporting
-            fetch-depth: 0
+        with:
+          # Disabling shallow clone is recommended for improving relevancy of reporting
+          fetch-depth: 0
       - name: Use Node.js 16.x
         uses: actions/setup-node@v1
         with:
