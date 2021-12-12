@@ -28,7 +28,7 @@ module.exports = function (config) {
       dir: require('path').join(__dirname, '../../coverage/family-lib'),
       subdir: '.',
       reporters: [
-        { type: 'html' },
+        { type: 'lcov' },
         { type: 'text-summary' }
       ]
     },
