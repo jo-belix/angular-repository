@@ -94,6 +94,7 @@
             "polyfills": "projects/daily-child-app/src/polyfills.ts",
             "tsConfig": "projects/daily-child-app/tsconfig.spec.json",
             "karmaConfig": "projects/daily-child-app/karma.conf.js",
+            "codeCoverageExclude": ["/**/*spec.ts"],
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/daily-child-app/src/favicon.ico",
@@ -134,7 +135,8 @@
           "options": {
             "main": "projects/family-lib/src/test.ts",
             "tsConfig": "projects/family-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/family-lib/karma.conf.js"
+            "karmaConfig": "projects/family-lib/karma.conf.js",
+            "codeCoverageExclude": ["/**/*spec.ts"]
           }
         }
       }
