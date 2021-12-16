@@ -10,7 +10,9 @@
     "build:push": "ng build",
     "test:push": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "build:ci": "ng build",
-    "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI --code-coverage "
+    "test:ci": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI --code-coverage",
+    "build:cd": "ng build",
+    "test:cd": "ng test --no-watch --no-progress --browsers=ChromeHeadlessCI"
   },
   "private": true,
   "dependencies": {
